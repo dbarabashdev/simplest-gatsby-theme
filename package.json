@@ -1,0 +1,4 @@
+{
+  "workspaces": ["gatsby-theme-simplest", "site"],
+  "private": true
+}
