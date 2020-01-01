@@ -1,4 +1,4 @@
-# ${1: gatsvy-theme-simplest}
+# gatsby-theme-simplest
 TODO: Write a project description
 ## Installation
 TODO: Describe the installation process
