@@ -19,7 +19,9 @@ const EventsTemplate = () => {
       }
     }
   `)
+
   const events = data.allEvent.nodes
+
   return (
     <Layout>
       <EventList events={events} />

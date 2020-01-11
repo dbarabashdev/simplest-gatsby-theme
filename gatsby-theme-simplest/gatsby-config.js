@@ -3,14 +3,14 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        path: "data",
-      },
+        path: "data"
+      }
     },
     {
       resolve: "gatsby-transformer-yaml",
       options: {
-        typeName: "Event",
-      },
-    },
-  ],
+        typeName: "Event"
+      }
+    }
+  ]
 }
