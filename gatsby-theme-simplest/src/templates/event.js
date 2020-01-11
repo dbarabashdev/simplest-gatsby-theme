@@ -22,4 +22,4 @@ const EventTemplate = ({ data: { event } }) => (
 )
 
 export default EventTemplate
-// test 
+// test

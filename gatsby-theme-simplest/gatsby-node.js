@@ -6,7 +6,7 @@ exports.onPreBootstrap = ({ reporter }) => {
     reporter.info(`creating the ${contentPath} directory`)
     fs.mkdirSync(contentPath)
   }
-}  
+}
 
 exports.sourceNodes = ({ actions }) => {
   actions.createTypes(`
@@ -34,9 +34,9 @@ exports.createResolvers = ({ createResolvers }) => {
   createResolvers({
     Event: {
       slug: {
-        resolve: source => slugify(source.name),
-      },
-    },
+        resolve: source => slugify(source.name)
+      }
+    }
   })
 }
 
@@ -44,7 +44,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const basePath = "/"
   actions.createPage({
     path: basePath,
-    component: require.resolve("./src/templates/events.js"),
+    component: require.resolve("./src/templates/events.js")
   })
   const result = await graphql(`
     query {
@@ -69,8 +69,8 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       path: slug,
       component: require.resolve("./src/templates/event.js"),
       context: {
-        eventID: event.id,
-      },
+        eventID: event.id
+      }
     })
   })
 }
