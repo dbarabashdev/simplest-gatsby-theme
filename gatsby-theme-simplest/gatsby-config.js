@@ -3,7 +3,7 @@ module.exports = ({ contentPath = "data", basePath = "/" }) => ({
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        path: contentPath,
+        path: contentPath
       }
     },
     {
@@ -13,4 +13,4 @@ module.exports = ({ contentPath = "data", basePath = "/" }) => ({
       }
     }
   ]
-}
+})
